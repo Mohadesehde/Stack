@@ -34,6 +34,10 @@ public:
             maxsize=s;
         }
     }
+    ~Stack()
+    {
+        delete []st;
+    }
     bool isempty()
     {
         if (top==-1)
